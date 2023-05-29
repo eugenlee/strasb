@@ -33,7 +33,7 @@ const UserNav = () => {
           size={30}
           css={{ fontWeight: "600", textShadow: "0px 0px 3px #ffffff" }}
         >
-          <a href="/">Strasb</a>
+          <Link href="/">Strasb</Link>
         </Text>
       </Navbar.Brand>
       {user ? (
