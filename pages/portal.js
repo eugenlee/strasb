@@ -57,7 +57,7 @@ export default function Sell(props) {
             let desc = response.description;
             alchemy.nft.getContractMetadata(contractaddr).then((result) => {
               let nftdata = {
-                name: name,
+                name: "Strasb",
                 img: img,
                 tokenId: token,
                 desc: desc,

@@ -1,5 +1,4 @@
 // SPDX-License-Identifier: MIT LICENSE
-
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 
@@ -15,7 +14,7 @@ contract Collection is ERC721Enumerable, Ownable {
     uint256 public maxMintAmount = 5;
     bool public paused = false;
 
-    constructor() ERC721("Creator NFT Collection", "CRE") {}
+    constructor() ERC721("Strasb NFT Collection", "N2D") {}
 
 
     function _baseURI() internal view virtual override returns (string memory) {

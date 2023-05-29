@@ -57,7 +57,7 @@ export default function Home(props) {
           var salePrice = Number(_hex)
           let formatprice = ethers.utils.formatUnits(salePrice.toString(), "ether");
           let nftdata = {
-            name: nft.rawMetadata.name,
+            name: "Strasb",
             image: img,
             tokenId: token,
             description: desc,

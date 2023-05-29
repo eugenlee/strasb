@@ -1,5 +1,4 @@
 // SPDX-License-Identifier: MIT LICENSE
-
 pragma solidity ^0.8.4;
 
 import "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol";
