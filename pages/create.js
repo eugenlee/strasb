@@ -109,7 +109,7 @@ export default function CreateMarket() {
                     <Text>Select your Preferred Network, Create your Amazing NFT by uploading your art using the simple NFT Dashboard. Simple!</Text>
                   </Card.Body>
                 </Card>
-                <img src='alchemy-black.svg' style={{maxWidth:'300px'}} />
+                <img alt="alchemy logo" src='alchemy-black.svg' style={{maxWidth:'300px'}} />
                 <Card css={{ marginTop: '$5' }} >
                   <Card.Body style={{ backgroundColor: "White" }}>
                     <Text>A Simplified Web3 Marketplace built with the power and security of Alchemy's SDK.</Text>
