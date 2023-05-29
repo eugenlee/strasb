@@ -39,7 +39,7 @@ export default function CreateMarket() {
                     <Text>Test Mint from NFT Collection</Text>
                   </Card.Body>
                 </Card>
-                <img src='alchemy-black.svg' style={{maxWidth:'300px'}} />
+                <img alt="alchemy logo" src='alchemy-black.svg' style={{maxWidth:'300px'}} />
               </Col>
               <Col>
               <Spacer></Spacer>

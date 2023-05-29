@@ -158,7 +158,7 @@ export default function Home(props) {
               {console.log(resellnft)}
               {resellnft.map((nft, i) => (
                 <div key={i}>
-                  <img src={nft.image} key={i} />
+                  <img alt="nft imag" src={nft.image} key={i} />
                   <Text h4 style={{color:"black"}}>TokenId:{" " + nft.tokenId}</Text>
                 </div>
               ))}
@@ -217,6 +217,7 @@ export default function Home(props) {
                       <p style={{ fontSize: "30px" }}>
                         {nft.value}{" "}
                         <img
+                          alt="matic logo"
                           src="matic.svg"
                           style={{
                             width: "40px",
@@ -272,6 +273,7 @@ export default function Home(props) {
                     <Text style={{ fontSize: "30px" }}>
                       {nft.price}
                       <img
+                        alt="matic logo"
                         src="matic.svg"
                         style={{
                           width: "40px",
