@@ -12,7 +12,7 @@ const UserNav = () => {
 
   const handleClick = () => {
     // dispatch(changeUser());
-    setUser(!creator);
+    setCreator(!creator);
   }
 
 
