@@ -1,4 +1,3 @@
-"use client";
 import { ethers } from 'ethers';
 import { useEffect, useState } from 'react';
 import Web3Modal from "web3modal";
@@ -41,7 +40,6 @@ export default function Home(props) {
   async function loadAlchemyResell() {
     const alchemy = new Alchemy(alchemysettings)
     const provider = await alchemy.config.getProvider()
-    console.log(props.res);
     const wallet = new ethers.Wallet(props.res.name, provider)
     const contract = new ethers.Contract(nftresell, Resell, wallet)
     const itemArray = []

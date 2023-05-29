@@ -8,11 +8,11 @@ import { Link } from '@nextui-org/react'
 const UserNav = () => {
   // const advertiser = useSelector((state) => state.user.advertiser);
   // const dispatch = useDispatch()
-  const [user, setUser] = useState('false');
+  const [creator, setCreator] = useState(true);
 
   const handleClick = () => {
     // dispatch(changeUser());
-    setUser(!user);
+    setUser(!creator);
   }
 
 
@@ -36,7 +36,7 @@ const UserNav = () => {
           <Link href="/">Strasb</Link>
         </Text>
       </Navbar.Brand>
-      {user ? (
+      {!creator ? (
         <Navbar.Content activeColor="secondary" hideIn="xs" variant="underline">
           <Link style={style} href="/">
             Home
@@ -62,7 +62,7 @@ const UserNav = () => {
         </Navbar.Content>
       )}
       <Link onClick={handleClick}>
-        {user ? "Advertiser" : "Creator"}
+        {!creator ? "Advertiser" : "Creator"}
       </Link>
     </Navbar>
   );
