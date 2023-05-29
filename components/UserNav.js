@@ -3,6 +3,7 @@ import { Logo } from "../pages/logo";
 import { useSelector, useDispatch } from 'react-redux'
 import { changeUser } from '../userSlice'
 import { useState } from 'react'
+import { Link } from '@nextui-org/react'
 
 const UserNav = () => {
   // const advertiser = useSelector((state) => state.user.advertiser);
@@ -37,32 +38,32 @@ const UserNav = () => {
       </Navbar.Brand>
       {user ? (
         <Navbar.Content activeColor="secondary" hideIn="xs" variant="underline">
-          <a style={style} href="/">
+          <Link style={style} href="/">
             Home
-          </a>
-          <a style={style} href="/portal">
+          </Link>
+          <Link style={style} href="/portal">
             My Portal
-          </a>
+          </Link>
         </Navbar.Content>
       ) : (
         <Navbar.Content activeColor="secondary" hideIn="xs" variant="underline">
-          <a style={style} href="/">
+          <Link style={style} href="/">
             Home
-          </a>
-          <a style={style} href="/create">
+          </Link>
+          <Link style={style} href="/create">
             Create
-          </a>
-          <a style={style} href="/mint">
+          </Link>
+          <Link style={style} href="/mint">
             Minter
-          </a>
-          <a style={style} href="/portal">
+          </Link>
+          <Link style={style} href="/portal">
             My Portal
-          </a>
+          </Link>
         </Navbar.Content>
       )}
-      <a onClick={handleClick}>
+      <Link onClick={handleClick}>
         {user ? "Advertiser" : "Creator"}
-      </a>
+      </Link>
     </Navbar>
   );
 };

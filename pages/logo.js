@@ -1,3 +1,5 @@
+import { Link } from '@nextui-org/react'
+
 export const Logo = () => (
-    <a href="/"><img src="alchemyblue.png" style={{maxWidth:'40px', marginRight:'4px'}}></img></a>
+    <Link href="/"><img src="alchemyblue.png" style={{maxWidth:'40px', marginRight:'4px'}}></img></Link>
   );

@@ -7,7 +7,7 @@ import { nftcollection } from '../engine/configuration';
 import { Card, Button, Input, Col, Row, Spacer, Container, Text } from '@nextui-org/react';
 import 'sf-font'
 
-export default function createMarket() {
+export default function CreateMarket() {
     const [formInput, updateFormInput] = useState({ amount: '' })
 
     const router = useRouter()

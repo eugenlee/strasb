@@ -9,7 +9,7 @@ import { Card, Button, Input, Col, Row, Spacer, Container, Text } from '@nextui-
 import 'sf-font'
 import { client } from '../engine/configuration';
 
-export default function createMarket() {
+export default function CreateMarket() {
     const [fileUrl, setFileUrl] = useState(null)
     const [formInput, updateFormInput] = useState({ price: '', name: '', description: '' })
 
