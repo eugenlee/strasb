@@ -29,7 +29,7 @@ const UserNav = () => {
           size={30}
           css={{ fontWeight: "600", textShadow: "0px 0px 3px #ffffff" }}
         >
-          <a href="/">Strasb</a>
+          <Link href="/">Strasb</Link>
         </Text>
       </Navbar.Brand>
       {advertiser ? (
@@ -46,10 +46,10 @@ const UserNav = () => {
           <Link href="/">
             <a style={style}>Home</a>
           </Link>
-          <Link style={style} href="/create">
+          <Link href="/create">
             <a style={style}>Create</a>
           </Link>
-          <Link style={style} href="/mint">
+          <Link href="/mint">
             <a style={style}>Minter</a>
           </Link>
           <Link href="/portal">
