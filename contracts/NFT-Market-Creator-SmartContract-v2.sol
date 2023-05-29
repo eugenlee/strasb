@@ -13,7 +13,7 @@ contract N2DNFT is ERC721URIStorage, Ownable {
     address contractAddress;
     uint256 public cost = 0.0075 ether;
 
-    constructor(address marketContract) ERC721("n2DMarket", "N2DM") {
+    constructor(address marketContract) ERC721("CREMarket", "CREM") {
         contractAddress = marketContract;
     }
 

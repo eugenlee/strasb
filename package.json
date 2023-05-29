@@ -9,13 +9,30 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@nextui-org/react": "^1.0.0-beta.13",
+    "@reduxjs/toolkit": "^1.9.5",
+    "alchemy-sdk": "^2.8.3",
     "autoprefixer": "10.4.14",
+    "axios": "^1.4.0",
+    "canvas-confetti": "^1.6.0",
+    "dotenv": "^16.0.3",
     "eslint": "8.41.0",
     "eslint-config-next": "13.4.4",
-    "next": "13.4.4",
+    "ethers": "5.7.2",
+    "ipfs-http-client": "^60.0.1",
+    "next": "12.2.3",
     "postcss": "8.4.24",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "tailwindcss": "3.3.2"
+    "react-multi-carousel": "^2.8.4",
+    "react-redux": "^8.0.5",
+    "sf-font": "^1.0.0",
+    "tailwindcss": "3.3.2",
+    "web3": "^1.10.0",
+    "web3modal": "^1.9.12"
+  },
+  "devDependencies": {
+    "@types/canvas-confetti": "^1.6.0",
+    "@types/react": "^18.2.7"
   }
 }
