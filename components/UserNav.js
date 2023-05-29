@@ -1,16 +1,16 @@
 import { Text, Navbar } from "@nextui-org/react";
 import Logo from "../pages/logo";
-import { useSelector, useDispatch } from 'react-redux'
-import { changeUser } from '../userSlice'
-import NextLink from 'next/link'
+import { useSelector, useDispatch } from "react-redux";
+import { changeUser } from "../userSlice";
+import Link from "next/link";
 
 const UserNav = () => {
   const advertiser = useSelector((state) => state.user.advertiser);
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
   const handleClick = (event) => {
     dispatch(changeUser());
-  }
+  };
 
   const style = {
     fontFamily: "SF Pro Display",
@@ -34,32 +34,30 @@ const UserNav = () => {
       </Navbar.Brand>
       {advertiser ? (
         <Navbar.Content activeColor="secondary" hideIn="xs" variant="underline">
-          <a style={style} href="/">
-            Home
-          </a>
-          <a style={style} href="/portal">
-            My Portal
-          </a>
+          <Link href="/">
+            <a style={style}>Home</a>
+          </Link>
+          <Link href="/portal">
+            <a style={style}>My Portal</a>
+          </Link>
         </Navbar.Content>
       ) : (
         <Navbar.Content activeColor="secondary" hideIn="xs" variant="underline">
-          <a style={style} href="/">
-            Home
-          </a>
-          <a style={style} href="/create">
-            Create
-          </a>
-          <a style={style} href="/mint">
-            Minter
-          </a>
-          <a style={style} href="/portal">
-            My Portal
-          </a>
+          <Link href="/">
+            <a style={style}>Home</a>
+          </Link>
+          <Link style={style} href="/create">
+            <a style={style}>Create</a>
+          </Link>
+          <Link style={style} href="/mint">
+            <a style={style}>Minter</a>
+          </Link>
+          <Link href="/portal">
+            <a style={style}>My Portal</a>
+          </Link>
         </Navbar.Content>
       )}
-      <a onClick={handleClick}>
-        {advertiser ? "Advertiser" : "Creator"}
-      </a>
+      <a onClick={handleClick}>{advertiser ? "Advertiser" : "Creator"}</a>
     </Navbar>
   );
 };
