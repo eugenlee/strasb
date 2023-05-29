@@ -2,19 +2,15 @@ import { Text, Navbar } from "@nextui-org/react";
 import Logo from "../pages/logo";
 import { useSelector, useDispatch } from 'react-redux'
 import { changeUser } from '../userSlice'
-import { useState } from 'react'
-import { Link } from '@nextui-org/react'
+import NextLink from 'next/link'
 
 const UserNav = () => {
-  // const advertiser = useSelector((state) => state.user.advertiser);
-  // const dispatch = useDispatch()
-  const [creator, setCreator] = useState(true);
+  const advertiser = useSelector((state) => state.user.advertiser);
+  const dispatch = useDispatch()
 
-  const handleClick = () => {
-    // dispatch(changeUser());
-    setCreator(!creator);
+  const handleClick = (event) => {
+    dispatch(changeUser());
   }
-
 
   const style = {
     fontFamily: "SF Pro Display",
@@ -33,37 +29,37 @@ const UserNav = () => {
           size={30}
           css={{ fontWeight: "600", textShadow: "0px 0px 3px #ffffff" }}
         >
-          <Link href="/">Strasb</Link>
+          <a href="/">Strasb</a>
         </Text>
       </Navbar.Brand>
-      {!creator ? (
+      {advertiser ? (
         <Navbar.Content activeColor="secondary" hideIn="xs" variant="underline">
-          <Link style={style} href="/">
+          <a style={style} href="/">
             Home
-          </Link>
-          <Link style={style} href="/portal">
+          </a>
+          <a style={style} href="/portal">
             My Portal
-          </Link>
+          </a>
         </Navbar.Content>
       ) : (
         <Navbar.Content activeColor="secondary" hideIn="xs" variant="underline">
-          <Link style={style} href="/">
+          <a style={style} href="/">
             Home
-          </Link>
-          <Link style={style} href="/create">
+          </a>
+          <a style={style} href="/create">
             Create
-          </Link>
-          <Link style={style} href="/mint">
+          </a>
+          <a style={style} href="/mint">
             Minter
-          </Link>
-          <Link style={style} href="/portal">
+          </a>
+          <a style={style} href="/portal">
             My Portal
-          </Link>
+          </a>
         </Navbar.Content>
       )}
-      <Link onClick={handleClick}>
-        {!creator ? "Advertiser" : "Creator"}
-      </Link>
+      <a onClick={handleClick}>
+        {advertiser ? "Advertiser" : "Creator"}
+      </a>
     </Navbar>
   );
 };

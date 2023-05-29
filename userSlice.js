@@ -9,7 +9,7 @@ export const userSlice = createSlice({
   initialState,
   reducers: {
     changeUser: (state) => {
-      !state.advertiser
+      state.advertiser=!state.advertiser
     }
   },
 })

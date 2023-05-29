@@ -38,7 +38,7 @@ yarn dev
 # or
 pnpm dev
 ```
-connect your metamask wallet, and you should be good to go! The Advertiser/Creator navbar is a bit finnicky because state mangement was kicking my butt. Please bare with the MVP! 🙏
+connect your metamask wallet, and you should be good to go!
 
 # Smart Contracts deployed on Mumbai Testnet
 NFT Collection Contract
