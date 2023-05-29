@@ -1,5 +1,5 @@
 import { Text, Navbar } from "@nextui-org/react";
-import { Logo } from "../pages/logo";
+import Logo from "../pages/logo";
 import { useSelector, useDispatch } from 'react-redux'
 import { changeUser } from '../userSlice'
 import { useState } from 'react'
