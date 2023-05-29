@@ -126,7 +126,7 @@ if (loaded === "loaded" && !nfts.length)
           </Card>
         </Col>
       </Row>
-     <Text h4>No NFT's Found on Wallet</Text>
+     <Text h4>No NFTs Found on Wallet</Text>
      </Container>
   );
 

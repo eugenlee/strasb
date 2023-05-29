@@ -112,7 +112,7 @@ export default function CreateMarket() {
                 <img alt="alchemy logo" src='alchemy-black.svg' style={{maxWidth:'300px'}} />
                 <Card css={{ marginTop: '$5' }} >
                   <Card.Body style={{ backgroundColor: "White" }}>
-                    <Text>A Simplified Web3 Marketplace built with the power and security of Alchemy's SDK.</Text>
+                    <Text>A Simplified Web3 Marketplace built with the power and security of Alchemys SDK.</Text>
                   </Card.Body>
                 </Card>
               </Col>
