@@ -2,7 +2,7 @@
 IPFS API DETAILS
 */
 import { create as ipfsHttpClient } from 'ipfs-http-client';
-export const client = ipfsHttpClient('http://localhost:5001');
+export const client = ipfsHttpClient(process.env.IPFS_CLIENT);
 
 export var nftcollection = "0xBF774A8Bd17255607AbD061fC0E45D5d0ddF1BE8"
 export var nftresell = "0x369c778f89aA412b98A7fB9CE846eAa5cb13585c"
