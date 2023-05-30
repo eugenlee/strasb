@@ -158,7 +158,7 @@ export default function CreateMarket() {
               <Card.Body style={{ backgroundColor: "#white" }}>
                 <Text>
                   Choose your Preferred Network and unleash your creativity by uploading your unique 
-                  artwork through our user-friendly NFT Dashboard. It's hassle-free and straightforward!
+                  artwork through our user-friendly NFT Dashboard. Its hassle-free and straightforward!
                 </Text>
               </Card.Body>
             </Card>
@@ -170,7 +170,7 @@ export default function CreateMarket() {
             <Card css={{ marginTop: "$5" }}>
               <Card.Body style={{ backgroundColor: "White" }}>
                 <Text>
-                  Experience the convenience and security of Alchemy's SDK-powered Simplified Web3 Marketplace. 
+                  Experience the convenience and security of Alchemys SDK-powered Simplified Web3 Marketplace. 
                   Discover a seamless platform that empowers creators and collectors alike.
                 </Text>
               </Card.Body>
