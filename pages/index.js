@@ -34,6 +34,11 @@ export default function Home(props) {
   };
   const router = useRouter()
 
+  const ipfsToHttp = (url) => {
+    if (url)
+      return url.replace("ipfs://", "https://ipfs.io/ipfs/");
+  };
+
   /*
   Mumbai Listings Functions
   */
@@ -87,7 +92,7 @@ export default function Home(props) {
         tokenId: i.tokenId.toNumber(),
         seller: i.seller,
         owner: i.owner,
-        image: meta.data.image,
+        image: ipfsToHttp(meta.data.image),
         name: meta.data.name,
         description: meta.data.description,
       }
@@ -154,6 +159,7 @@ export default function Home(props) {
               itemClass="carousel-item-padding-200-px"
             >
               {console.log(resellnft)}
+              {console.log(marketnft)}
               {resellnft.map((nft, i) => (
                 <div key={i}>
                   <img alt="nft imag" src={nft.image} key={i} />
