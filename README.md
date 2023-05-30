@@ -28,6 +28,7 @@ pnpm dev
 connect your metamask wallet, and you should be good to go!
 
 # Smart Contracts deployed on Mumbai Testnet
+*** Preventing advertiser from selling and crediting creator with matic not yet implemented ***
 NFT Collection Contract
 0xEc73F8AF700b31500Be63708d3151f8eB736308B
 
