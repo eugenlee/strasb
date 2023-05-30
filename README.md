@@ -1,6 +1,8 @@
 # Strasb
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+View the on-chain deployment: [here](https://www.tally.xyz/gov/web3atkaist-2023/proposal/19363343624449512003859703095119427253163935390615042240894878141681517417169).
+
 ## Getting Started
 This project uses the Polygon Mumbai Testnet. If you don't have any MATIC, go to [https://mumbaifaucet.com/](https://mumbaifaucet.com/) and send 0.5 MATIC to your wallet.
 
