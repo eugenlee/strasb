@@ -20,16 +20,14 @@ Block Explorer URL: https://mumbai.polygonscan.com
 If you don't have any MATIC, go to [https://mumbaifaucet.com/](https://mumbaifaucet.com/) and send 0.5 MATIC to your wallet.
 
 ### Setup
-First install the dependencies:
-```bash
-npm install
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
+Install the dependencies:
+```bash
+npm install
+```
 
 Run the development server:
 
@@ -40,7 +38,10 @@ yarn dev
 # or
 pnpm dev
 ```
-connect your metamask wallet, and you should be good to go!
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+Connect your metamask wallet, and you should be good to go!
 
 # Smart Contracts deployed on Mumbai Testnet
 *** Preventing advertiser from selling and crediting creator with matic not yet implemented ***
