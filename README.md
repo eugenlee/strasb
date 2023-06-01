@@ -3,6 +3,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 View the on-chain deployment: [here](https://www.tally.xyz/gov/web3atkaist-2023/proposal/19363343624449512003859703095119427253163935390615042240894878141681517417169).
 
+***NFT images don't seem to render on school network, please try hotspot or personal wifi!***
+
 ## Getting Started
 This project uses the Polygon Mumbai Testnet.
 
