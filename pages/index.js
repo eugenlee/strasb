@@ -108,7 +108,8 @@ export default function Home(props) {
     const signer = provider.getSigner()
     const contract = new ethers.Contract(marketcontract, Market, signer)
     const price = ethers.utils.parseUnits(nft.price.toString(), 'ether')
-    const transaction = await contract.n2DMarketSale(nftcreator, nft.tokenId, {
+    console.log(contract);
+    const transaction = await contract.strBMarketSale(nftcreator, nft.tokenId, {
       value: price
     })
     await transaction.wait()

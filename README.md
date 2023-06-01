@@ -44,15 +44,15 @@ connect your metamask wallet, and you should be good to go!
 *** Preventing advertiser from selling and crediting creator with matic not yet implemented ***
 
 NFT Collection Contract
-0xEc73F8AF700b31500Be63708d3151f8eB736308B
+0x9B01794cD410D344d67719224b1F88fE7b8e886f
 
 NFT Resell Contract
-0xdDAaB3a949fecE8b6e77B960Eee72061D7465C78
+0xB58749ed51Fd5167F79d81B586e64a28695aaaca
 
 NFT Marketplace Contract
-0xfb7aacbDc58EEF8755f97962Dbd88d2471541Ce0
+0x05bB0dB7F0cE17a42755A9Cee6Ad65139B2eaa86
 
 NFT Creator Contract
-0x1aDF2DeCad6AbD7Daf3A87936DbA0F0B42714cCA
+0x09ca1c6448f32a12B4F3029bfd907Cd95C43C333
 
 boilerplate credits to: https://github.com/net2devcrypto
