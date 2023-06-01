@@ -4,7 +4,18 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 View the on-chain deployment: [here](https://www.tally.xyz/gov/web3atkaist-2023/proposal/19363343624449512003859703095119427253163935390615042240894878141681517417169).
 
 ## Getting Started
-This project uses the Polygon Mumbai Testnet. If you don't have any MATIC, go to [https://mumbaifaucet.com/](https://mumbaifaucet.com/) and send 0.5 MATIC to your wallet.
+This project uses the Polygon Mumbai Testnet.
+
+To add the Mumbai Testnet to Metamask:
+```bash
+Network Name: Mumbai
+New RPC URL: https://polygon-mumbai.infura.io/v3/4458cf4d1689497b9a38b1d6bbf05e78
+Chain ID: 80001
+Currency Symbol: MATIC
+Block Explorer URL: https://mumbai.polygonscan.com
+```
+
+If you don't have any MATIC, go to [https://mumbaifaucet.com/](https://mumbaifaucet.com/) and send 0.5 MATIC to your wallet.
 
 ### Setup
 First install the dependencies:
